@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para ti, mi bonita</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle at top, #0b1d2a, #02040a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Georgia', serif;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: #ffb6d5;
+  font-size: 3em;
+  margin-bottom: 40px;
+  text-shadow: 0 0 15px rgba(255,182,213,0.8);
+}
+
+.flowers {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+
+.flower {
+  position: absolute;
+  bottom: 0;
+}
+
+.stem {
+  width: 6px;
+  height: 160px;
+  background: linear-gradient(#1f8a3b, #145c28);
+  margin: auto;
+  border-radius: 10px;
+}
+
+.bloom {
+  width: 80px;
+  height: 80px;
+  background: #ff5fa2;
+  border-radius: 50%;
+  position: relative;
+  top: -40px;
+  box-shadow: 0 0 15px rgba(255,95,162,0.8);
+}
+
+.bloom::before,
+.bloom::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #ff5fa2;
+  border-radius: 50%;
+}
+
+.bloom::before {
+  left: -35px;
+}
+
+.bloom::after {
+  right: -35px;
+}
+
+.center {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 20px;
+  height: 20px;
+  background: #ffd166;
+  border-radius: 50%;
+}
+
+/* Posiciones */
+.f1 { left: 40px; }
+.f2 { left: 110px; height: 180px; }
+.f3 { left: 180px; }
+
+.stars span {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  animation: twinkle 3s infinite alternate;
+}
+
+@keyframes twinkle {
+  from { opacity: 0.2; }
+  to { opacity: 1; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Para ti, mi bonita</h1>
+
+  <div class="flowers">
+    <div class="flower f1">
+      <div class="bloom"><div class="center"></div></div>
+      <div class="stem"></div>
+    </div>
+
+    <div class="flower f2">
+      <div class="bloom"><div class="center"></div></div>
+      <div class="stem"></div>
+    </div>
+
+    <div class="flower f3">
+      <div class="bloom"><div class="center"></div></div>
+      <div class="stem"></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
