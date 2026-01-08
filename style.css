@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle at top, #0b1d2a, #02040a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Georgia', serif;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: #ffb6d5;
+  font-size: 3em;
+  margin-bottom: 50px;
+  text-shadow: 0 0 15px rgba(255,182,213,0.8);
+}
+
+.flowers {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.flower {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bloom {
+  width: 80px;
+  height: 80px;
+  background: #ff5fa2;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 15px rgba(255,95,162,0.8);
+}
+
+.bloom::before,
+.bloom::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #ff5fa2;
+  border-radius: 50%;
+}
+
+.bloom::before {
+  left: -35px;
+}
+
+.bloom::after {
+  right: -35px;
+}
+
+.center {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 18px;
+  height: 18px;
+  background: #ffd166;
+  border-radius: 50%;
+}
+
+.stem {
+  width: 6px;
+  height: 120px;
+  background: linear-gradient(#1f8a3b, #145c28);
+  border-radius: 10px;
+  margin-top: 5px;
+}
